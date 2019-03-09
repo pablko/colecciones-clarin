@@ -37,6 +37,222 @@
       </nav>
     </div>
   </header>
+  
+  <!-- Modal entregas -->
+  <div id="entregas">
+
+    <style>
+      #entregas {
+        position: fixed;
+        z-index: 998;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        padding: 20px;
+        text-transform: uppercase;
+        display: block;
+        top: -100vw;
+        transition: .8s;
+      }
+      .contEntregas {
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        max-height: 90vh;
+        transform: translate(-50%,-50%);
+        width: 95%;
+        max-width: 760px;
+        background: #e2e2e2;
+        padding: 30px;
+        overflow-y: auto;
+      }
+      .contEntregas .close {
+        position: absolute;
+        top: 5px;
+        right: 8px;
+        font-size: 10px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding: 10px;
+        z-index: 9;
+        color: inherit;
+      }
+      .contEntregas .close strong {
+        font-size: 14px;
+        position: relative;
+        top: 1px;
+      }
+      .contEntregas p {
+        font-size: 17px;
+        margin-top: 20px;
+        color: #212121;
+      }
+      .contEntregas h3 {
+        font-size: 29px;
+        color: #212121;
+        font-weight: 900;
+        margin: 10px 0;
+      }
+      .contEntregas .tabla .item {
+        display: flex;
+        justify-content: space-between;
+        min-height: 60px;
+        background: #FFF;
+        padding: 10px 0;
+      }
+      .contEntregas .tabla .item:nth-child(even) {
+        background: #f0f0f0;
+      }
+      .contEntregas .tabla .item .dia {
+        padding: 0 30px;
+        width: 30%;
+        text-align: right;
+      }
+      .contEntregas .tabla .item .nombre {
+        padding: 0 30px;
+        width: 55%;
+      }
+      .contEntregas .tabla .item .nombre small {
+        font-size: 13px;
+        display: block;
+        color: #9e9e9e;
+      }
+      .contEntregas .tabla .item .status {
+        width: 15%;
+        padding: 0 30px;
+        position: relative;
+      }
+      .contEntregas .tabla .item .status:after {
+        content: '';
+        position: absolute;
+        width: 30px;height: 30px;
+        left:50%;top:0;
+        border:2px #9e9e9e solid;
+        border-radius: 30px;
+        margin-left: -15px;
+      }
+      .contEntregas .tabla .item .status.ok:after {
+        background: #d4c685 url(../src/images/check.png) no-repeat center;
+        background-size: 20px;
+        border-color: #d4c685;
+      }
+      .contEntregas .tabla .item .status.next:after {
+        background: #f92515  url(../src/images/exclamacion.png) no-repeat center;
+        background-size: 20px;
+        border-color: #f92515 ;
+      }
+      .contEntregas .tabla .item.actual {
+        background: #131313;
+        color: #FFF;
+      }
+    </style>
+
+    <div class="contEntregas">
+      <a href="#" class="close" onclick="closeModal(); return false">cerrar <strong>x</strong></a>
+      <p>Cronograma de entregas</p>
+      <h3>Novela Negra Nórdica</h3>
+      <div class="tabla">
+        <div class="item">
+          <div class="dia">Miércoles 06/03</div>
+          <div class="nombre">
+            <small>Entrega N°1</small>
+            <strong>Los hombres que no amaban a las mujeres</strong>
+          </div>
+          <div class="status ok"></div>
+        </div>
+        <div class="item actual">
+          <div class="dia">Miércoles 20/03</div>
+          <div class="nombre">
+            <small>Entrega N°2</small>
+            <strong>La chica que soñaba con una cerilla y un bidón de gasolina</strong>
+          </div>
+          <div class="status next"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 27/03</div>
+          <div class="nombre">
+            <small>Entrega N°3</small>
+            <strong>La reina en el palacio de las corrientes de aire</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 03/04</div>
+          <div class="nombre">
+            <small>Entrega N°4</small>
+            <strong>Lo que no te mata te hace mas fuerte</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 10/04</div>
+          <div class="nombre">
+            <small>Entrega N°5</small>
+            <strong>Aurora boreal</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 17/04</div>
+          <div class="nombre">
+            <small>Entrega N°6</small>
+            <strong>Sangre derramada</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 24/04</div>
+          <div class="nombre">
+            <small>Entrega N°7</small>
+            <strong>Cuando pase tu ira</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 01/05</div>
+          <div class="nombre">
+            <small>Entrega N°8</small>
+            <strong>El silencio en las tierras altas</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 08/05</div>
+          <div class="nombre">
+            <small>Entrega N°9</small>
+            <strong>Intuición</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 15/05</div>
+          <div class="nombre">
+            <small>Entrega N°10</small>
+            <strong>El ermitaño</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 22/05</div>
+          <div class="nombre">
+            <small>Entrega N°11</small>
+            <strong>Mona</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="item">
+          <div class="dia">Miércoles 29/05</div>
+          <div class="nombre">
+            <small>Entrega N°12</small>
+            <strong>Ocultos</strong>
+          </div>
+          <div class="status"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <section>
     <article class="head" style="background-position: center 0px;">
       <div class="art-container">
@@ -128,7 +344,7 @@
           <h4>Próxima entrega <span>Miércoles 20/03</span></h4>
           <h2>LA CHICA QUE SOÑABA CON UNA CERILLA Y UN BIDÓN DE GASOLINA</h2>
           <small>Entrega N°2</small>
-          <a href="#">Ver todas las entregas</a>
+          <a href="#" onclick="openModal(); return false">Ver todas las entregas</a>
         </div>
       </div>
       <style>
@@ -302,6 +518,13 @@
         var st = $(window).scrollTop();
         $('article.head').css({'background-position': 'center '+-st*1+'px'})
       });
+    }
+
+    function openModal() {
+      document.getElementById('entregas').style.cssText = 'top:0vw';
+    }
+    function closeModal() {
+      document.getElementById('entregas').style.cssText = 'top:-100vw';
     }
   </script>
 </body>
