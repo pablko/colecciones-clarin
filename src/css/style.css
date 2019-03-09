@@ -241,7 +241,7 @@ header .nav-container {
 .art-med .box-text p span {
   color: #636363
 }
-.art-med .box-text a, .art-peq .box-art a {
+.art-med .box-text a, .art-peq .box-art a, .ult-lanz .box-art a {
   position: absolute;
   bottom: 30px;
   display: block;
@@ -256,7 +256,7 @@ header .nav-container {
   background-color: #dbdbdb;
   transition: .3s;
 }
-.art-med .box-text a:hover, .art-peq .box-art a:hover {
+.art-med .box-text a:hover, .art-peq .box-art a:hover, .ult-lanz .box-art a:hover {
   background-color: #F92515;
   color: #FFF
 }
@@ -280,24 +280,23 @@ header .nav-container {
   justify-items: center;
   margin-bottom: 70px;
 }
-.art-peq .box-art {
+.art-peq .box-art, .ult-lanz .box-art {
   height: 415px;
   width: 350px;
   background-color: #F1F1F1;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-
 }
-.art-peq .box-img {
+.art-peq .box-img, .ult-lanz .box-img {
   height: 252px;
   padding: 15px;
 }
-.art-peq .box-img img {
+.art-peq .box-img img, .ult-lanz .box-img img {
   max-width: 100%;
   max-height: 100%;
   display: block;
   margin: auto;
 }
-.art-peq .box-text {
+.art-peq .box-text, .ult-lanz .box-text {
   height: 163px;
   bottom: 0;
   padding: 20px;
@@ -307,7 +306,7 @@ header .nav-container {
   text-transform: uppercase;
   background-color: #FFF;
 }
-.art-peq .box-text h2 {
+.art-peq .box-text h2, .ult-lanz .box-text h2 {
   font-size: 23px;
   color: #212121;
   margin: 0 0 5px 0;
@@ -315,21 +314,21 @@ header .nav-container {
   font-weight: 900;
   letter-spacing: -1px;
 }
-.art-peq .box-text p {
+.art-peq .box-text p, .ult-lanz .box-text p {
   font-size: 15px;
   color: #a6a6a6;
   margin-bottom: 5px;
   font-weight: 400;
   margin: 0 0 5px 0;
 }
-.art-peq .box-text p span {
+.art-peq .box-text p span, .ult-lanz .box-text p span {
   color: #636363
 }
 .art-peq .box-text p .hoy {
   font-weight: 900;
   color: #f92515;
 }
-.art-peq .box-art a {
+.art-peq .box-art a, .ult-lanz .box-art a {
   bottom: 20px !important;
 }
 
@@ -373,11 +372,12 @@ footer .nav-container .clarin {
 }
 footer .nav-container p {
   padding-left: 10px;
+  color: #a6a6a6;
   /* text-align: center; */
 }
 footer .nav-container p a {
   font-weight: 900;
-  color: #000
+  color: #5f5f5f;
 }
 footer .nav-container .csnt {
   position: absolute;

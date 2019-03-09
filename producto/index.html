@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../src/css/style.css">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+
+  <!-- Scripts -->  
+  <script src="../src/js/jquery-3.0.0.min.js"></script>
+
+  <title>Demo Producto | Colecciones Clarín</title>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <nav class="navbar">
+        <a href="../index.html"><img src="../src/images/logo-colecciones-new.jpg" width="207px" height="55px" alt="Colecciones Clarín"></a>
+        <ul>
+          <li><a href="#">INTERÉS GENERAL</a></li>
+          <li><a href="#">LITERATURA</a></li>
+          <li><a href="#">COCINA</a></li>
+        </ul>
+        <div id="search">
+          <form action="" id="buscador">
+            <input type="text" placeholder="Buscá tu colección">
+            <input type="submit">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <article class="head" style="background-position: center 0px;">
+      <div class="art-container">
+        <div class="box-text">
+          <h2>Novela Negra Nórdica</h2>
+          <p>Lanzamiento <strong>Miércoles 06/03</strong></p>
+          <p>Frecuencia <strong>Primera entrega quincenal. A partir de la entrega N°2 semanal.</strong></p>
+          <p>Entregas <strong>12</strong></p>
+          <p>Próxima entrega <strong>Miércoles 20/03</strong></p>
+          <p class="precio">Precio $349,90 - Oferta Lanzamiento N°1 a $279,90</p>
+        </div>
+      </div>
+      <div class="btAbajo"></div>
+      
+      <!-- Style Head -->
+      
+      <style>
+        body {
+          background: #fafafa;
+        }
+        .head {
+          background-image: url(../src/images/background-producto.jpg);
+          height: 95vh;
+          background-size: cover;
+          /* background-position: top center; */
+          background-position: center 0px;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+        .art-container {
+          padding: 0 80px;
+          margin: auto;
+          max-width: 1280px;
+          width: 100%;
+          height: 100%;
+          position: relative;
+        }
+        .head .box-text {
+          position: absolute;
+          top: 33%;
+          left: 40px;
+          color: #FFF;
+          max-width: 600px;
+          font-size: 25px;
+        }
+        .head .box-text h2 {
+          font-size: 52px;
+          font-weight: 900;
+          max-width: 450px;
+          margin: 0 0 25px 0;
+          letter-spacing: -0.05em;
+          line-height: 0.9;
+        }
+        .head .box-text p {
+          margin: 0;
+          padding: 0;
+          line-height: 25px;
+        }
+        .head .box-text p strong {
+          font-weight: 900;
+        }
+        .head .box-text .precio {
+          margin-top: 25px;
+          width: 680px;
+        }
+        .btAbajo {
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          border-radius: 60px;
+          background: #d4c685 url(../src/images/arrow-dwn.png) no-repeat center;
+          box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+          z-index: 9;
+          left: calc(50% - 30px);
+          bottom: -30px;
+          cursor: pointer;
+        }
+      </style>
+    </article>
+
+    <article class="detalle">
+      <div class="det-container">
+        <p>Descubrí las tramas más oscuras, los personajes más siniestros que inspiraron películas y series y que reinventaron el policial.</p>
+        <p><img src="../src/images/nordica-poster.jpg" alt=""></p>
+      </div>
+      <div class="prox-num">
+        <img src="../src/images/novela-negra-nordica.png" alt="">
+        <div class="prox-text">
+          <h4>Próxima entrega <span>Miércoles 20/03</span></h4>
+          <h2>LA CHICA QUE SOÑABA CON UNA CERILLA Y UN BIDÓN DE GASOLINA</h2>
+          <small>Entrega N°2</small>
+          <a href="#">Ver todas las entregas</a>
+        </div>
+      </div>
+      <style>
+        section {
+          background-color: #fafafa;
+        }
+        .detalle {
+          max-width: 1280px;
+          width: 100%;
+          margin: auto;
+          position: relative;
+          padding: 60px 40px 0 40px;
+          background: #fafafa;
+          margin-bottom: 120px;
+        }
+        .det-container {
+          margin: 0 40px;
+          width: calc(100% - 80px);
+        }
+        .det-container p {
+          max-width: 760px;
+          padding: 15px 20px;
+          text-align: center;
+          color: #212121;
+          font-size: 18px;
+          margin: auto;
+          line-height: 1.3;
+        }
+        .prox-num {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: relative;
+          top: 60px;
+          max-width: 1280px;
+          width: 100%;
+          margin: auto;
+        }
+        .prox-text {
+          padding: 0 40px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+        .prox-text h4 {
+          font-size: 17px;
+          color: #9e9e9e;
+          font-weight: 400;
+          margin: 0;
+        }
+        .prox-text h4 span {
+          color: #212121;
+        }
+        .prox-text h2 {
+          color: #212121;
+          font-size: 29px;
+          font-weight: 600;
+          margin: 7px 0;
+          line-height: 29px;
+        }
+        .prox-text small {
+          font-size: 13px;
+          display: block;
+          color: #9e9e9e;
+        }
+        .prox-text a {
+          color: #636363;
+          font-size: 13px;
+          text-align: center;
+          display: inline-block;
+          width: 250px;
+          line-height: 50px;
+          border-radius: 4px;
+          background: #e2e2e2;
+          margin-top: 25px;
+          transition: .3s;
+        }
+        .prox-text a:hover {
+          color: #FFF;
+          background-color: #f92515;
+        }
+      </style>
+    </article>
+    
+    <article class="ult-lanz">
+      <h4>Ultimos lanzamientos</h4>
+      <div class="grid-box">
+        <div class="box-art">
+          <div class="box-img"><img src="../src/images/tartas-pizzas-empanadas.png" alt=""></div>
+          <div class="box-text">
+            <h2>Tartas, pizzas y empanadas</h2>
+            <p>Próxima entrega <span>sábado 16/03</span></p>
+            <a href="#">Conocé más</a>
+          </div>
+        </div>
+        <div class="box-art">
+          <div class="box-img"><img src="../src/images/gps-tetaz.png" alt=""></div>
+          <div class="box-text">
+            <h2>El gps de tu economía cotidiana con Martín Tetaz</h2>
+            <p>Próxima entrega <span>martes 12/03</span></p>
+            <a href="#">Conocé más</a>
+          </div>
+        </div>
+        <div class="box-art">
+          <div class="box-img"><img src="../src/images/autos-deportivos.png" alt=""></div>
+          <div class="box-text">
+            <h2>Autos deportivos de leyenda</h2>
+            <p>Próxima entrega <span>Miércoles 20/03</span></p>
+            <a href="#">Conocé más</a>
+          </div>
+        </div>
+
+      <style>
+        .ult-lanz {
+          max-width: 1280px;
+          width: 100%;
+          margin: auto;
+          position: relative;
+          padding: 60px 40px 0 40px;
+          background: #fafafa;
+          margin-bottom: 30px;
+        }
+        .ult-lanz h4 {
+          width: calc(100% - 50px);
+          margin: 0 25px;
+          font-size: 23px;
+          color: #212121;
+          text-transform: uppercase;
+          height: 30px;
+          font-weight: 400;
+          border-bottom: 1px solid #dbdbdb;
+        }
+        .ult-lanz .grid-box {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          grid-template-areas: "uno dos tres";
+          height: 415px;
+          row-gap: 40px;
+          width: 100%;
+          max-width: 1280px;
+          justify-items: center;
+          /* margin-bottom: 70px; */
+          margin-top: 40px;
+        }
+        .ult-lanz .box-art:nth-of-type(1) {
+          grid-area: uno;
+        }
+        .ult-lanz .box-art:nth-of-type(2) {
+          grid-area: dos;
+        }
+        .ult-lanz .box-art:nth-of-type(3) {
+          grid-area: tres;
+        }
+        
+      </style>
+    </article>
+  </section>
+  <footer>
+    <div class="nav-container">
+      <img src="../src/images/logo-clarin.png" alt="" class="clarin">
+      <p>2019 - Diseño tomado de <a href="https://colecciones.clarin.com" target="_blank">Colecciones Clarín</a> realizado por <a href="https://consonante.net"><remark>Consonante</remark></a></p>
+      <img src="../src/images/logo-csnt-294px.png" alt="" class="csnt">
+    </div>
+  </footer>
+  <script>
+    $('.btAbajo').on('click', function(){
+      $('html,body').animate({scrollTop: $('.detalle').offset().top - 50}, 1000);
+    })
+    if($(window).width() > 640){
+      $(window).on('scroll', function(){
+        var st = $(window).scrollTop();
+        $('article.head').css({'background-position': 'center '+-st*1+'px'})
+      });
+    }
+  </script>
+</body>
+</html>
